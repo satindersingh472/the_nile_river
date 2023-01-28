@@ -59,7 +59,7 @@ trip2 = Trip(300, driver2, 40)
 
 def test_money(f):
   try:
-    money = f(UEXODI=trip1, DEFZXIE=trip2)
+    money = f(First=trip1, Second=trip2)
   except TypeError:
     print("calculate_money_made() doesn't expect multiple trip keyword arguments")
     return
